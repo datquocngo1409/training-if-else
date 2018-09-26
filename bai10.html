@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <script>
+    var soDien=prompt("Nhập số điện đã sử dụng: ",0);
+    var thanhTien;
+    if(parseInt(soDien)<=50) thanhTien=soDien*1.484;
+    else if (parseInt(soDien)<=100) thanhTien=50*1.484+(soDien-50)*1.533;
+    else if (parseInt(soDien)<=200) thanhTien=50*1.484+50*1.533+(soDien-100)*1.786;
+    else if (parseInt(soDien)<=300)  thanhTien=50*1.484+50*1.533+100*1.786+(soDien-200)*2.242;
+    else if (parseInt(soDien)<=400)  thanhTien=50*1.484+50*1.533+100*1.786+100*2.242+(soDien-300)*2.503;
+    else thanhTien=50*1.484+50*1.533+100*1.786+100*2.242+100*2.503+(soDien-400)*2.587;
+    alert("Thành tiền: "+thanhTien);
+  </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <script>
+    var a,b,c;
+    a=prompt("Nhập cạnh 1: ",0);
+    b=prompt("Nhập cạnh 2: ",0);
+    c=prompt("Nhập cạnh 3: ",0);
+    if(a>0 && b>0 && c>0 && parseInt(a)+parseInt(b)>parseInt(c) && parseInt(b)+parseInt(c)>parseInt(a) && parseInt(a)+parseInt(c)>parseInt(b)) alert("Đây là 3 cạnh của 1 tam giác");
+    else alert("Đây không phải 3 cạnh của một tam giác!");
+  </script>
+</body>
+</html>
